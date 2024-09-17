@@ -67,3 +67,163 @@ div.newPost div.infoUser strong {
     margin-left: 10px;
     color: #23A0FF;
 }
+
+div.newPost form.formPost {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.newPost form.formPost textarea {
+    height: 90px;
+    background: #fbfbfb;
+    margin: 15px 0;
+    padding: 25px;
+    border-radius: 10px;
+    resize: none; 
+    outline:none;
+    border: 0;
+
+    font-weigh: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #727272;
+}
+
+div.newPost form.formPost div.iconAndButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.newPost form.formPost div.iconAndButton div.icons {
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+div.newPost form.formPost div.iconAndButton div.icons button {
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+    border: none;
+
+    background: none;
+
+    cursor: pointer;
+}
+
+div.newPost form.formPost div.iconAndButton button.btnSubmitForm {
+    background: #23A0FF;
+    padding: 10px 50px;
+    color: #fff;
+    font-weigh: bold;
+    outline: none;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 10px;  
+    transition: background 0.2s;
+}
+
+div.newPost form.formPost div.iconAndButton button.btnSubmitForm:hover{
+    background: rgba(8, 138,236)
+}
+
+ul.posts li.post{
+    margin-bottom: 50px;
+    width: 100%
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 1px 0 3px rgba(0,0,0,0.05)
+}
+
+ul.posts li.post div.infoUserPost {
+    display: flex;
+    align-items: center;
+}
+
+ul.posts li.post div.infoUserPost div.nameAndHour {
+    main-left: 10px;
+}
+
+ul.posts li.post div.infoUserPost div.imgUserPost {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #23A0FF;
+}
+
+ul.posts li.post div.infoUserPost div.nameAndHour >strong{
+    margin-left: 10px;
+}
+
+ul.posts li.post div.infoUserPost div.nameAndHour >p{
+    color: #d1d1d1;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+ul.posts li.post >p {
+    width: 100%;
+    margin: 20px 0;
+    font-weigh: bold;
+    color: #727272;   
+}
+
+ul.posts li.post div.actionBtnPost {
+    display: flex;
+    align-items: center;
+}
+
+ul.posts li.post div.actionBtnPost button.filesPost {
+    padding: 5px 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+
+    font-weigh: bold;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: background 0.2s
+}
+
+ul.posts li.post div.actionBtnPost button.filesPost img {
+    margin-right: 5px;
+}
+
+.like {
+    background: #FF6B6B;
+}
+
+.like:hover {
+    background: rgba(248, 75, 75);
+}
+
+.comment {
+    background: #FFC320;
+}
+
+.comment:hover {
+    background: rgba(245, 180, 0);
+}
+
+.share {
+    background: #23A0FF;
+}
+
+.share:hover {
+    background: rgba(8, 141, 241);
+}
