@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
     <title>Bem Social</title>
 </head>
 <body>
     <header>
-        <img src="./assets/logo.svg" alt="logo">
+        <img src="./assets/images/logo.svg" alt="logo">
     </header>
-
+ 
     <!--Formulário de envio/postagem-->
     <main class="main">
         <div class="newPost">
@@ -20,43 +20,30 @@
                 <strong>Nome Completo</strong>
             </div>
             
-            <form action="" class="formPost">
-                <textarea name="textarea" placeholder="Vamos mudar o mundo?"></textarea>
-
+            <form action="" class="formPost" id="formPost">
+                <div class="textareaContainer">
+                    <textarea id="textarea" name="textarea" placeholder="O que você está pensando hoje?"></textarea>
+                    <div class="mediaPreview" id="mediaPreview"></div>
+                </div>                
+                
                 <div class="iconAndButton">
                     <div class="icons">
-                        <button class="btnFileForm like"><img src="./assets/img.svg" alt="AddImage"></button>
-                        <button class="btnFileForm comment"><img src="./assets/gif.svg" alt="AddGif"></button>
-                        <button class="btnFileForm share"><img src="./assets/video.svg" alt="AddVideo"></button>
+                        <button class="btnFileForm like" type="button" id="addImage">
+                            <img src="./assets/images/img.svg" alt="AddImage">
+                        </button>
+                        <button class="btnFileForm comment" type="button" id="addGif">
+                            <img src="./assets/images/gif.svg" alt="AddGif">
+                        </button>
+                        <button class="btnFileForm share" type="button" id="addVideo">
+                            <img src="./assets/images/video.svg" alt="AddVideo">
+                        </button>
                     </div>
                     <button type="submit" class="btnSubmitForm">Publicar</button>
                 </div>
-            </form>
-        </div>
-
-        <ul class="posts">
-            <li class="post">
-                <div class="infoUserPost">
-                    <div class="imgUserPost"></div>
-                    
-                    <div class="nameAndHour">
-                        <strong>Nome Completo</strong>
-                        <p>21h</p>
-                    </div>
-                </div>
-                <p>
-                    A vida é um presente que devemos celebrar a cada instante. Com suas alegrias e desafios, 
-                    ela nos molda e nos ensina a valorizar cada momento. Ao cultivar a gratidão e a esperança, 
-                    podemos encontrar beleza e significado em todas as experiências.
-                </p>
-
-                <div class="actionBtnPost">
-                    <button type="button" class="filesPost like"><img src="./assets/heart.svg" alt="Curtir">Curtir</button>
-                    <button type="button" class="filesPost comment"><img src="./assets/comment.svg" alt="Comentar">Comentar</button>
-                    <button type="button" class="filesPost share"><img src="./assets/share.svg" alt="Compartilhar">Compartilhar</button>
-                </div>
-            </li>
-        </ul>
+            </form>                      
+        </div>  
+        <ul class="posts" id="posts"></ul>          
     </main>
+    <script type='module' src='./assets/js/script.js'></script>
 </body>
 </html>
